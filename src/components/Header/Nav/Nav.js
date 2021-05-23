@@ -36,7 +36,7 @@ const LogoText = styled.h3`
     height: 8px;
     position: absolute;
     top: 6px;
-    right: 2px;
+    right: 3px;
     border-radius: 50%;
   }
 `;

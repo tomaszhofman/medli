@@ -18,7 +18,8 @@ const Wrapper = styled.section`
 const Background = styled.div`
   background-color: ${({ theme }) => theme.colors.creamy};
   width: 100%;
-  min-height: 70vh;
+  height: 60vh;
+  min-height: 844.49px;
 `;
 
 const GridWrapper = styled.div`
