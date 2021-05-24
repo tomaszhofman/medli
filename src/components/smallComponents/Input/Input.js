@@ -17,6 +17,10 @@ const StyledInputWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: ${({ theme }) => theme.device.l}) {
+      flex-direction: column;
+    }
   }
 
   ${StyledButton} {
@@ -27,6 +31,20 @@ const StyledInputWrapper = styled.div`
     border-radius: 4px;
     font-size: 18px;
     padding: 4px 16px;
+
+    @media (max-width: ${({ theme }) => theme.device.l}) {
+      width: 500px;
+      height: 62px;
+      width: 100%;
+      display: block;
+      position: unset;
+      margin-bottom: 63px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.device.s}) {
+      width: 326px;
+      height: 62px;
+    }
   }
 `;
 
@@ -47,6 +65,17 @@ export const Input = styled.input`
   :focus {
     color: ${({ theme }) => theme.colors.lightGrey};
     outline: none;
+  }
+
+  @media (max-width: ${({ theme }) => theme.device.l}) {
+    width: 500px;
+    height: 62px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.device.s}) {
+    width: 326px;
+    height: 62px;
   }
 `;
 
