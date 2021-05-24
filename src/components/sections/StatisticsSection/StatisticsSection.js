@@ -11,7 +11,7 @@ const Wrapper = styled.section`
 `;
 
 const Background = styled.div`
-  height: 570px;
+  height: 520px;
   background-color: ${({ theme }) => theme.colors.creamy};
 `;
 

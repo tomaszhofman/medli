@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Image from 'next/image';
 import styled from 'styled-components';
-import { StyledButton } from '../../Button/Button';
+import { StyledButton } from '../../../smallComponents/Button/Button';
+import Logo from '../../../smallComponents/Logo/Logo';
 
 const Wrapper = styled.div`
   max-width: 1200px;
@@ -11,34 +11,6 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
-
-const StyledLogo = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const LogoText = styled.h3`
-  text-transform: capitalize;
-  font-family: ${({ theme }) => theme.fontFamily.primary};
-  font-weight: ${({ theme }) => theme.fontWeight.m};
-  color: ${({ theme }) => theme.colors.black};
-  font-size: 40px;
-  line-height: 117%;
-  margin: 0 0 0 15px;
-  position: relative;
-
-  &::before {
-    content: '';
-    background-color: ${({ theme }) => theme.colors.sunYellow};
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 6px;
-    right: 3px;
-    border-radius: 50%;
-  }
 `;
 
 const StyledNav = styled.nav`
@@ -95,16 +67,7 @@ const StyledNavButton = styled.button`
 const Nav = () => {
   return (
     <Wrapper>
-      <StyledLogo>
-        <Image
-          src="/assets/logo.png"
-          alt="Picture of the author"
-          width={56}
-          height={42.04}
-          layout="fixed"
-        />
-        <LogoText>Medli</LogoText>
-      </StyledLogo>
+      <Logo />
       <StyledNav>
         <StyledNavButton>Home</StyledNavButton>
         <StyledNavButton>About</StyledNavButton>

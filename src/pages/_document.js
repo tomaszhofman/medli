@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 // Import styled components ServerStyleSheet
 import { ServerStyleSheet } from 'styled-components';
 
@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <Html>
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap"
@@ -25,14 +25,13 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           ></link>
 
-          <title>Medli</title>
           {this.props.styleTags}
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

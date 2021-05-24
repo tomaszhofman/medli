@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
-import { StyledButton } from '../Button/Button';
+import { StyledButton } from '../../smallComponents/Button/Button';
 
 const Wrapper = styled.section`
   position: relative;
@@ -19,7 +19,7 @@ const Background = styled.div`
   background-color: ${({ theme }) => theme.colors.creamy};
   width: 100%;
   height: 60vh;
-  min-height: 844.49px;
+  min-height: 804px;
 `;
 
 const GridWrapper = styled.div`
@@ -86,7 +86,7 @@ const HeroSection = () => {
           <div>
             <ImageWrapper>
               <Image
-                src="/assets/girl-with-book.png"
+                src="/assets/hero-girl.svg"
                 alt="Girl reading a book "
                 width={677}
                 height={400}

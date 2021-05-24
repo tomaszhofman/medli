@@ -41,13 +41,23 @@ const TextWrapper = styled.p`
 const PlayButton = styled.div`
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 237px);
-  background: rgba(254, 244, 230, 0.8);
+  transform: translate(-50%, 210px);
+  background: rgba(254, 244, 230, 0.6);
   backdrop-filter: blur(10px);
   z-index: 99;
   width: 130px;
   height: 130px;
   border-radius: 50%;
+
+  img {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 58px;
+    width: 100%;
+    cursor: pointer;
+  }
 `;
 
 const VideoSection = () => {
@@ -58,7 +68,9 @@ const VideoSection = () => {
         <TextWrapper>
           A mission-driven company that invest in and builds healthier living
         </TextWrapper>
-        <PlayButton />
+        <PlayButton>
+          <img src="/assets/play-button.svg" alt="play button icon" />
+        </PlayButton>
         <Image
           src="/assets/woman-yoga.png"
           alt="sun icon"
