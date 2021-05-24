@@ -31,6 +31,7 @@ const VideoSection = () => {
               height={603}
               quality={80}
               layout="responsive"
+              loading="lazy"
             />
           </div>
         </StyledImage>

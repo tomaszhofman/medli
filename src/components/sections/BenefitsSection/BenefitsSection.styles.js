@@ -86,8 +86,8 @@ export const CardsWrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.device.s}) {
       width: 327px;
-      padding: 45px 72px;
       margin: 20px;
+      padding: 53px 45px;
     }
 
     h2 {
@@ -99,7 +99,7 @@ export const CardsWrapper = styled.div`
       margin: 81px 0 16px 0;
 
       @media (max-width: ${({ theme }) => theme.device.s}) {
-        margin: 0;
+        margin: 68px 0 0 0;
       }
     }
 
