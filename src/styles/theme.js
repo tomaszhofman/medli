@@ -4,8 +4,9 @@ export const theme = {
     sunYellow: '#FABD20',
     darkGreen: '#40462F',
     black: '#131E07',
-    white: '#E5E5E5',
+    white: '#FFFFFF',
     lightGrey: '#7C8176',
+    silverWhite: '#E5E5E5',
   },
   fontWeight: {
     m: 400,

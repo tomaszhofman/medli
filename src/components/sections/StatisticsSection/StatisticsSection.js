@@ -6,12 +6,12 @@ const Wrapper = styled.section`
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding: 20px;
-  width: 100%;
+  padding: 20px 90px 20px 90px;
+  height: 100%;
 `;
 
 const Background = styled.div`
-  height: 400px;
+  height: 520px;
   background-color: ${({ theme }) => theme.colors.creamy};
 `;
 
